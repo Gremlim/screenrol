@@ -43,12 +43,10 @@ class header extends \view\view {
 		$username=$this->di->get_user() ? $this->di->get_user()->get_usuario() : null;
 		$current_profile=$this->di->get_user() ? $this->di->get_user()->get_permisos() : null;
 
-		$menu_view_desktop=new \view\templates\menu_desktop($this->menu->get_categories(), $this->current_section, $current_profile);
-		$menu_view_mobile=new \view\templates\menu_mobile($this->menu->get_categories(), $this->current_section, $current_profile);
 
 
-		$view_menu_desktop=$menu_view_desktop->create_view();
-		$view_menu_mobile=$menu_view_mobile->create_view();
+		$view_menu_desktop='';
+		$view_menu_mobile='';
 
 		$movil=detectar_dispositivo();
 
@@ -57,7 +55,7 @@ class header extends \view\view {
 
 		$view_script_tags=$this->build_script_tags();
 		$view_style_tags=$this->build_style_tags();
-		$view_modal=$this->build_modal();
+		
 
 		$invert_logo_no_router=$this->is_router ? null :
 <<<R
@@ -91,7 +89,7 @@ R;
 	<body id="bodyDash" class="not_madness">
 		<div id="not_madness"></div>
 		<div id="dash-container">
-		{$view_modal}
+		
 		{$view_navbar}
 
 	  	<!--LATERAL GRANDE IZQUIERDA-->
@@ -141,32 +139,17 @@ R;
 
 		//TODO: This is data... Should go somewhere else.
 		$load=array(
-			"assets/js/jquery-2.1.0.min.js",
-			"assets/js/jquery-ui-1.11.0.custom.min.js",
-			"assets/js/bootstrap.min.js",
-			"assets/js/bootstrap-switch.min.js",
-			"assets/js/bootstrap-dialog.min.js",
-			"assets/js/perfect-scrollbar.min.js",
-			"assets/js/jquery.uploadify.js",
-			"assets/js/moment.js",
-			"assets/js/moment-with-locales.js",
-			"assets/js/bootstrap-datepicker.js",
-			"assets/js/bootstrap-datetimepicker.min.js",
-			"assets/js/locales/bootstrap-datepicker.es.min.js",
-			"assets/js/highcharts.js",
-			"assets/js/themes/grid.js",
-			"assets/js/modules/exporting.js",
-			"assets/js/export-csv.js",
+			"assets/js/jquery/jquery-3.3.1.min.js",
+			"assets/js/bootstrap/bootstrap.min.js",
+			"assets/js/fontawesome/all.min.js",
+			"assets/js/app/fetch.js",
 			"assets/js/app/modal.js",
-			"assets/js/app/madness.js",
-			"assets/js/app/common.js?t=".time(),
-			"assets/js/app/fetch.js"
+			"assets/js/app/common.js"
 		);
 
 		return array_reduce(array_unique(array_merge($load, $this->section_js)), function($_acum, $_item) {
 			$_acum.=<<<R
 		<script type="text/javascript" src="{$_item}"></script>
-
 R;
 			return $_acum;
 		}, '');
@@ -176,34 +159,17 @@ R;
 
 		//TODO: This is data... Should go somewhere else.
 		$load=array(
-			"assets/css/font-awesome.min.css",
-			"assets/css/bootstrap.min.css",
-			"assets/css/bootstrap-switch.min.css",
-			"assets/css/bootstrap-dialog.min.css",
-			"assets/css/bootstrap-theme.min.css",
-			"assets/css/awesome-bootstrap-checkbox.css",
-			"assets/css/jquery-ui-1.11.0.custom.min.css",
-			"assets/css/style.css?t=".time(),
-			"assets/css/madness.css?t=".time(),
-			"assets/css/datepicker.css",
-			"assets/css/perfect-scrollbar.min.css",
-			"assets/css/font-awesome.min.css",
-			"assets/css/bootstrap.min.css",
-			"assets/css/bootstrap-switch.min.css",
-			"assets/css/bootstrap-dialog.min.css",
-			"assets/css/bootstrap-theme.min.css",
-			"assets/css/awesome-bootstrap-checkbox.css",
-			"assets/css/jquery-ui-1.11.0.custom.min.css",
-			"assets/css/style.css",
-			"assets/css/dist.css",
-			"assets/css/datepicker.css",
-			"assets/css/perfect-scrollbar.min.css");
+			"assets/css/bootstrap/bootstrap-grid.min.css",
+			"assets/css/bootstrap/bootstrap-reboot.min.css",
+			"assets/css/bootstrap/bootstrap.min.css",
+			"assets/css/fontawesome/all.min.css",
+			"assets/css/style.css"
+		);
 
 
 		return array_reduce(array_unique(array_merge($load, $this->section_css)), function($_acum, $_item) {
 			$_acum.=<<<R
 		<link rel="stylesheet" title="estilos" type="text/css" href="{$_item}" media="screen" />
-
 R;
 			return $_acum;
 }, '');
@@ -221,24 +187,7 @@ R;
 R;
 	}
 
-	private function 				build_modal() {
-
-		return <<<R
-		<!-- Modal -->
-		<div class="modal fade" id="dialog-modal" tabindex="-1" role="dialog" aria-labelledby="dialog-modal-title" aria-hidden="true">
-		  <div class="modal-dialog modal-lg">
-			<div class="modal-content">
-			  <div class="modal-header">
-				<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-				<h4 class="modal-title" id="dialog-modal-title"></h4>
-			  </div>
-			  <div class="modal-body" id="dialog-modal-body"></div>
-			</div>
-		  </div>
-		</div>
-R;
-	}
-
+	
 	private function 				build_navbar($movil, $username) {
 
 		$btnsup_class=$movil ? 'menLateral2' : 'col-sm-5';
