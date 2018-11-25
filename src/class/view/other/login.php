@@ -33,7 +33,7 @@ class login extends \view\section {
 		}
 
 
-		$error_class=strlen($view_errors) ? null : 'hidden';
+		$error_class=strlen($view_errors) ? null : 'invisible';
 
 		return <<<R
 		<div class="container-fluid">

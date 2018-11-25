@@ -97,7 +97,7 @@ class login extends \controller\unauthenticated_controller {
 			$em->update($user);
 
 			return $this->reply_with_redirection(
-				\app\tools::build_url('reset?email='.$_email.'&seed='.$_hash.'&sent='.$user->get_usuario()), \app\response::status_code_303_see_other, []);
+				\app\tools::build_url('reset?email='.$_email.'&seed='.$_hash.'&sent='.$user->get_user()), \app\response::status_code_303_see_other, []);
 		}
 		catch(\Exception $e) {
 
@@ -137,18 +137,18 @@ class login extends \controller\unauthenticated_controller {
 
 		$user->set_ultconex(time());
 		$em->update($user);
-
+		$persist=$_remember ? true : false;
 		if($PHPSSID){
 			$sess=new \model\app\session_user;
 			$sess->set_phpsessid($PHPSSID)
 				->set_usuario($user)
 				->set_fecha(date('Y-m-d H:i:s'))
 				->set_last_activity(date('Y-m-d H:i:s'))
-				->set_persist($_remember ? 1 : 0);
+				->set_persist($persist);
 			$em->create($sess);
 		}
 
-		// log_dash('conectar',$user->get_usuario());
+		// log_dash('conectar',$user->get_user());
 
 		return $this->reply_with_redirection(\app\tools::build_url('index'),
 			\app\response::status_code_303_see_other, []);

@@ -1,0 +1,10 @@
+{
+    "tablename":"gr_episodio",
+    "primary":"id",
+    "fields":[
+        {"name":"id","field":"id","type":"int","default":null},
+        {"name":"idcapitulo","field":"idcapitulo","type":"int","default":null},
+        {"name":"nombre","field":"nombre","type":"string","default":null},
+        {"name":"num","field":"num","type":"int","default":false}
+    ]
+}

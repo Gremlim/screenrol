@@ -1,0 +1,11 @@
+{
+    "tablename":"gr_pj_sesion",
+    "primary":"id",
+    "fields":[
+        {"name":"id","field":"id","type":"int","default":null},
+        {"name":"idpj","field":"idpj","type":"int","default":null},
+        {"name":"idsesion","field":"idsesion","type":"int","default":null},
+        {"name":"xp","field":"xp","type":"int","default":null},
+        {"name":"jugado","field":"jugado","type":"int","default":false}
+    ]
+}

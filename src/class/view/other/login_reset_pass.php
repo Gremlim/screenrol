@@ -66,7 +66,7 @@ R;
 			case 2: $show_error="Ha ocurrido un error en el proceso de recuperación"; break;
 		}
 
-		$display_error=!strlen($show_error) ? 'hidden' : null;
+		$display_error=!strlen($show_error) ? 'invisible' : null;
 		$url=\app\tools::build_url('login/perform_pass_change');
 
 		return <<<R

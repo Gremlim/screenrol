@@ -1,0 +1,11 @@
+{
+    "tablename":"gr_instancia",
+    "primary":"id",
+    "fields":[
+        {"name":"id","field":"id","type":"int","default":null},
+        {"name":"idusuario","field":"idusuario","type":"int","default":null},
+        {"name":"idaventura","field":"idaventura","type":"int","default":null},
+        {"name":"fecha","field":"fecha","type":"int","default":false},
+        {"name":"estado","field":"estado","type":"int","default":false}
+    ]
+}

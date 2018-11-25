@@ -73,7 +73,7 @@ R;
 			case 4: $show_errors='No ha sido posible restaurar la contraseña'; break;
 		}
 
-		$class_errors=!strlen($show_errors) ? 'hidden' : null;
+		$class_errors=!strlen($show_errors) ? 'invisible' : null;
 
 		return <<<R
 <center>

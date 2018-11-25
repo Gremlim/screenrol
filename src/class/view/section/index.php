@@ -7,8 +7,8 @@ class index extends \view\section {
 
 	return <<<R
 		<center>
-			<div style="width:300px;">
-				<img src="img/logotxt.png" class="img-responsive">
+			<div>
+				<img src="assets/img/logo.png" class="img-responsive" style="width:300px;">
 			</div>
 		</center>
 R;

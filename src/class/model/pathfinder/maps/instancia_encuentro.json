@@ -1,0 +1,11 @@
+{
+    "tablename":"gr_inst_encuentro",
+    "primary":"id",
+    "fields":[
+        {"name":"id","field":"id","type":"int","default":null},
+        {"name":"idinstancia","field":"idinstancia","type":"int","default":null},
+        {"name":"idencuentro","field":"idencuentro","type":"int","default":null},
+        {"name":"idsesion","field":"idsesion","type":"int","default":false},
+        {"name":"estado","field":"estado","type":"int","default":false}
+    ]
+}

@@ -1,0 +1,13 @@
+{
+    "tablename":"gr_encuentros",
+    "primary":"id",
+    "fields":[
+        {"name":"id","field":"id","type":"int","default":null},
+        {"name":"idepisodio","field":"idepisodio","type":"int","default":null},
+        {"name":"monstruo","field":"monstruo","type":"string","default":null},
+        {"name":"xp","field":"xp","type":"int","default":false},
+        {"name":"cantidad","field":"cantidad","type":"int","default":false},
+        {"name":"secundario","field":"secundario","type":"int","default":false},
+        {"name":"idinstancia","field":"idinstancia","type":"int","default":false}
+    ]
+}

@@ -7,7 +7,6 @@ class footer extends \view\view {
 	public function create_view() {
 
 		return <<<R
-			</div>
 		</div>
 	</div>
 	</div> <!-- Close dash-container -->

@@ -1,0 +1,15 @@
+{
+    "tablename":"gr_pj",
+    "primary":"id",
+    "fields":[
+        {"name":"id","field":"id","type":"int","default":null},
+        {"name":"idjugador","field":"idjugador","type":"int","default":null},
+        {"name":"nombre","field":"nombre","type":"string","default":null},
+        {"name":"raza","field":"raza","type":"string","default":null},
+        {"name":"clase","field":"clase","type":"string","default":false},
+        {"name":"estado","field":"estado","type":"int","default":false},
+        {"name":"sexo","field":"sexo","type":"string","default":false},
+        {"name":"img","field":"img","type":"string","default":false},
+        {"name":"xpactual","field":"xpactual","type":"int","default":false}
+    ]
+}

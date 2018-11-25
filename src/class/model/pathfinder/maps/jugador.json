@@ -1,0 +1,10 @@
+{
+    "tablename":"gr_jugador",
+    "primary":"id",
+    "fields":[
+        {"name":"id","field":"id","type":"int","default":null},
+        {"name":"idinstancia","field":"idinstancia","type":"string","default":null},
+        {"name":"estado","field":"estado","type":"int","default":false},
+        {"name":"nombre","field":"nombre","type":"string","default":false}
+    ]
+}

@@ -1,0 +1,17 @@
+{
+    "tablename":"gr_tesoro",
+    "primary":"id",
+    "fields":[
+        {"name":"id","field":"id","type":"int","default":null},
+        {"name":"idepisodio","field":"idepisodio","type":"int","default":null},
+        {"name":"tesoro","field":"tesoro","type":"string","default":null},
+        {"name":"ppt","field":"ppt","type":"int","default":null},
+        {"name":"po","field":"po","type":"int","default":false},
+        {"name":"pp","field":"pp","type":"int","default":false},
+        {"name":"pc","field":"pc","type":"int","default":false},
+        {"name":"libro","field":"libro","type":"string","default":false},
+        {"name":"pagina","field":"pagina","type":"int","default":false},
+        {"name":"cantidad","field":"cantidad","type":"int","default":false},
+        {"name":"idinstancia","field":"idinstancia","type":"int","default":false}
+    ]
+}

@@ -57,7 +57,11 @@ class entity_manager{
 		$stmt=$this->dbconn->conn->prepare($query);
 
 		foreach($map->fields as $field){
-			$stmt->bindParam(":".$field->field,$arr_values[$field->field]);
+			if(is_bool($arr_values[$field->field])){
+				$stmt->bindParam(":".$field->field,$arr_values[$field->field],\PDO::PARAM_BOOL);
+			}else{
+				$stmt->bindParam(":".$field->field,$arr_values[$field->field]);
+			}
 		}
 
 		$stmt->execute();
@@ -102,7 +106,11 @@ class entity_manager{
 		//IDEA: Save and reuse this statment. As in "update".
 		$stmt=$this->dbconn->conn->prepare($query);
 		foreach($arr_fields as $field){
-			$stmt->bindParam(":".$field,$arr_values[$field]);
+			if(is_bool($arr_values[$field->field])){
+				$stmt->bindParam(":".$field->field,$arr_values[$field->field],\PDO::PARAM_BOOL);
+			}else{
+				$stmt->bindParam(":".$field->field,$arr_values[$field->field]);
+			}
 		}
 		$stmt->execute();
         $_obj->set_pk(new pk($this->dbconn->conn->lastInsertId()));
