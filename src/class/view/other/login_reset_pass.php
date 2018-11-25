@@ -16,20 +16,17 @@ class login_reset_pass extends \view\section {
 		$this->username_sent=$_username_sent;
 	}
 
-	public function					get_js_array() {
-
-		return array_map(function($_item) {
-			return \app\tools::build_url($_item);
-		}, ['js/sections/login_reset_pass.js']);
-	}
-
 	public function					get_css_array() {
 
 		return array_map(function($_item) {
 			return \app\tools::build_url($_item);
-		}, ['assets/css/sections/login.css',
-		'assets/css/bootstrap.min.css',
-		'assets/css/style.css.css']);	//Not a section, but...
+		}, [
+			"assets/css/bootstrap/bootstrap-grid.min.css",
+			"assets/css/bootstrap/bootstrap-reboot.min.css",
+			"assets/css/bootstrap/bootstrap.min.css",
+			"assets/css/fontawesome/all.min.css",
+			"assets/css/style.css"
+		]);	//Not a section, but...
 	}
 
 	public function 				create_view() {
@@ -47,13 +44,13 @@ class login_reset_pass extends \view\section {
 		return <<<R
 	<center>
 		<div id="contenedorCentral">
-		<div id="imglogo" style="width:180px;"><a href="/app"><img src="img/logo.png" class="img-responsive"></a></div>
+		<div id="imglogo" style="width:180px;"><a href="/"><img src="assets/img/logo.png" class="img-responsive"></a></div>
 		<div id="formularioLogin">
 			<div class="alert alert-success col-sm-4 col-sm-offset-4">
 			La clave para <b>{$this->username_sent}</b> ha sido reseteada correctamente.
 			<br />
 			<br />
- 			Pinche <a href="/app">Aquí</a> para volver al inicio.</div>
+ 			Pinche <a href="/">Aquí</a> para volver al inicio.</div>
 		</div>
 	</center>
 R;
@@ -74,7 +71,7 @@ R;
 		return <<<R
 	<center>
 		<div id="contenedorCentral">
-		<div id="imglogo" style="width:180px;"><a href="/app"><img src="img/logo.png" class="img-responsive"></a></div>
+		<div id="imglogo" style="width:180px;"><a href="/"><img src="assets/img/logo.png" class="img-responsive"></a></div>
 		<div id="formularioLogin">
 			<div class="panel panel-default col-sm-4 col-sm-offset-4">
 				<div class="panel-heading">
@@ -105,7 +102,7 @@ R;
 
 						<div class="form-group">
 							<div class="col-lg-12">
-							<a class="btn btn-default" id="botonBorrar" href="recuperar_pass.php">Cancelar</a>
+							<a class="btn btn-default" id="botonBorrar" href="recovery">Cancelar</a>
 								<input type="submit" name="enviar" value="Restablecer" class="btn btn-primary" id="botonEntrar"/>
 							</div>
 						</div>

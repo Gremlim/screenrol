@@ -11,7 +11,7 @@ try {
 	$controller=new $route_data->classname($di);
 
 	if($controller->requires_authenticated_user() && null===$di->get_user()) {
-		header('location: '.\app\tools::build_url('login.php?bye'));
+		header('location: '.\app\tools::build_url('login'));
 		die();
 	}
 

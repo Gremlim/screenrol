@@ -45,7 +45,7 @@ class mail {
 		$mail->AddCustomHeader('X-Mailer', 'PHP/'.phpversion());
 		$mail->AddAddress($_email);
 
-		$restore_url=\app\config::get()->get_app_url()."reset_pass.php?seed={$_hash}&email={$_email}";
+		$restore_url=\app\config::get()->get_app_url()."reset?seed={$_hash}&email={$_email}";
 
 		$subject="Recuperación de contraseña";
 		$message=<<<R

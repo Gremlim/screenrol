@@ -111,7 +111,7 @@ h1, h2 {text-align: center; margin-bottom: 1em;}
 </head>
 <body>
 	<div class="logo" onclick="this.style.display='none'">
-		<img src="{$this->url}assets/img/logo.png" class="img-logo">
+		<img src="{$this->url}assets/img/d20.png" class="img-logo">
 		<img src="{$this->url}assets/img/cog.png" class="img-cog">
 		&nbsp;
 	</div>

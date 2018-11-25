@@ -4,7 +4,7 @@
     "fields":[
         {"name":"id","field":"id","type":"int","default":null},
         {"name":"phpsessid","field":"phpsessid","type":"string","default":null},
-        {"name":"usuario","field":"iduser","type":"model::dash::usuario","default":null,"reference":"cod"},
+        {"name":"usuario","field":"iduser","type":"model::app::usuario","default":null,"reference":"id"},
         {"name":"fecha","field":"fecha","type":"string","default":null},
         {"name":"persist","field":"persist","type":"boolean","default":false},
         {"name":"last_activity","field":"last_activity","type":"string","default":false}

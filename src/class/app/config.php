@@ -54,15 +54,15 @@ class config {
 	}
 
 	private function __construct() {
-
+		
 		try {
 			//The configuration path is always relative to this file. This is weak,
 			//but at least it is guaranteed to work wherever we are.
-			$file_path=realpath(__DIR__.'/../conf/config.json');
+			$file_path=realpath(__DIR__.'/../../conf/config.json');
 			$this->config_data=\tools\json::from_file($file_path);
 		}
 		catch(\Exception $e) {
-			mail('gremlim@gremlim.com', 'error in file_path for app\config', $e->getMessage());
+			// mail('gremlim@gremlim.com', 'error in file_path for app\config', $e->getMessage());
 			throw $e;
 		}
 	}

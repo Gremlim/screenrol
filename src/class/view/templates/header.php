@@ -97,7 +97,7 @@ R;
 			<div class="row">
 				<div class="col-sm-11 menUp listmenLateral">
 					<h4 class="pull-right">
-						<a href="index.php"><span class="fa fa-home pointer"></span></a>
+						<a href="index"><span class="fa fa-home pointer"></span></a>
 					</h4>
 				</div>
 			</div>
@@ -150,6 +150,7 @@ R;
 		return array_reduce(array_unique(array_merge($load, $this->section_js)), function($_acum, $_item) {
 			$_acum.=<<<R
 		<script type="text/javascript" src="{$_item}"></script>
+
 R;
 			return $_acum;
 		}, '');
@@ -170,6 +171,7 @@ R;
 		return array_reduce(array_unique(array_merge($load, $this->section_css)), function($_acum, $_item) {
 			$_acum.=<<<R
 		<link rel="stylesheet" title="estilos" type="text/css" href="{$_item}" media="screen" />
+
 R;
 			return $_acum;
 }, '');

@@ -9,7 +9,3 @@ spl_autoload_register(function($_class) {
     	}
 });
 
-require_once(\app\tools::build_path("src/class/external/DonDominioAPI/DonDominioAPI.php"));
-require_once(\app\tools::build_path("src/class/external/ExcelWriter/excelwriter.php"));
-require_once(\app\tools::build_path("src/class/external/PHPMailer/class.phpmailer2.php"));
-require_once(\app\tools::build_path("src/class/external/PHPMailer/class.smtp.php"));

@@ -49,10 +49,10 @@ class router {
 		}
 
 		//Check permissions...
-		$profile=null!==$this->di->get_user() ? $this->di->get_user()->get_permisos() : null;
+		/*$profile=null!==$this->di->get_user() ? $this->di->get_user()->get_permisos() : null;
 		if(!\app\path_authority::check($controller_name, $profile)) {
 			return new router_result(\app\tools::classname_resolver("controller::other::forbidden"), 'execute', []);
-		}
+		}*/
 
 		//Resolve and return.
 		$classname=\app\tools::classname_resolver($controller_name);

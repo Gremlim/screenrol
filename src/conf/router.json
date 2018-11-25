@@ -3,7 +3,7 @@
 		{"file":"/src/conf/patterns/login.json"}
 	],
 	"patterns":[
-		{"name" : "controller::section::index", 					"pattern" : "/index.php",
+		{"name" : "controller::section::index", 					"pattern" : "/index",
 			"metadata": {"method":"execute","params":[]}
 		},
 		{"name" : "controller::section::index",						"pattern" : "/",
