@@ -1,0 +1,19 @@
+.clickable{
+	cursor:pointer;
+}
+.full-width{
+	width:100%;
+}
+.table-borderless td{
+	border-top:none !important;
+}
+.purple{
+	background-color: #E7D2F7;
+}
+#piensaCli{
+	display:none;
+	text-align:center;
+}
+.row-padding{
+	padding: 15px;
+}

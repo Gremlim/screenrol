@@ -1,0 +1,14 @@
+{
+    "tablename":"acceso_admin",
+    "primary":"cod",
+    "fields":[
+        {"name":"cod","field":"cod","type":"int","default":null},
+        {"name":"usuario","field":"usuario","type":"string","default":null},
+        {"name":"password","field":"password","type":"string","default":null},
+        {"name":"ultimo_acceso","field":"ultimo_acceso","type":"int","default":null},
+        {"name":"email","field":"email","type":"string","default":null},
+        {"name":"permisos","field":"permisos","type":"string","default":null},
+        {"name":"tlf","field":"tlf","type":"string","default":null},
+        {"name":"nombre","field":"nombre","type":"string","default":null}
+    ]
+}

@@ -1,0 +1,8 @@
+.anexo-contrato{
+	border: 1px dashed gray;
+	padding:1em;
+}
+.anexo_caducado{
+	border: 1px dashed red !important;
+	padding:1em;
+}

@@ -1,0 +1,87 @@
+th {
+	text-align: center;
+}
+
+td.other div.info-container {
+	position: absolute;
+	width: 300px;
+	display: none;
+}
+
+td.other:hover div.info-container {
+	display: block;
+	position: relative;
+	top: 0px;
+	left: 0px;
+	background: #f0f0f0;
+	padding: 2em;
+	box-shadow: 5px 10px #888888;
+	border-radius: 5px;
+	z-index: 9999;
+
+}
+
+td.other div.info-container dl {
+	box-sizing: border-box;
+	width: 100%;
+	overflow: hidden;
+}
+
+td.other div.info-container dl {
+}
+
+td.other:hover div.info-label {
+	display: none;
+}
+
+td.other div.info-container dt {
+	float: left;
+	width: 45%;
+	text-align: right;
+}
+
+td.other div.info-container dd {
+	float: left;
+	width: 45%;
+	padding-left: 1em;
+}
+
+form#formbusca {box-sizing: border-box;}
+form#formbusca div #search {width: 40%;}
+form#formbusca div #type {width: 40%;}
+form#formbusca div #buscar {width: 10%;}
+
+ul.ip_list {width: 100%;}
+ul.ip_list li {display: inline; float: left; padding: 0em 1em; list-style-type: none; font-size: 0.9em; width: 100px;}
+
+.headers-ip,
+.headers-name {
+	width: 200px;
+}
+
+.btn_toggle_exceptional_status.exceptional:after {
+	content: 'Desactivar estado excepcional';
+}
+
+.btn_toggle_exceptional_status.not_exceptional:after {
+	content: 'Activar estado excepcional';
+}
+
+.btn_toggle_exceptional_status.loading:after {
+	content: 'Cargando...' !important;
+}
+
+tr.exceptional td {
+	background-color: #f4a742 !important;
+}
+.notes_container{
+	background-color:white;
+}
+.hasnote{
+	background-color:#EFE410 !important;
+	background-image: linear-gradient(to bottom,rgb(255, 247, 100) 0,#EFE410 100%);
+	background-repeat: repeat-x;
+	text-shadow: 0 1px 0 #fff;
+	border-color: #ccc;
+	box-shadow: inset 0 1px 0 rgba(255,255,255,.15),0 1px 1px rgba(0,0,0,.075);
+}

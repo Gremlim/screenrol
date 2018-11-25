@@ -1,0 +1,11 @@
+assets/css/dist.css
+src/conf/config.json
+src/conf/*_whitelist.txt
+src/conf/*_blacklist.txt
+build/dist/conf/*
+build/dist/css/*
+!build/dist/conf/*.dist.json
+!build/dist/css/*.dist.css
+tmp/*
+!tmp/.htaccess
+lib

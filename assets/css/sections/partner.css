@@ -1,0 +1,9 @@
+#partner-table {}
+#partner-table thead {}
+#partner-table thead tr th {text-align: center;}
+
+#partner-table tbody td {text-align: center; word-wrap: normal;}
+#partner-table tbody td.actions span:first-child {margin-right: 10px;}
+
+#partner-table tbody td.code-active {color: green;}
+#partner-table tbody td.code-inactive {color: red;}

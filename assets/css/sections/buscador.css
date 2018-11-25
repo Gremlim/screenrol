@@ -1,0 +1,52 @@
+.search-box{
+	background:#F0F0F0;
+	flex-basis: auto;
+	flex-grow:1;
+	flex-shrink:1;
+	margin-right:1.5em;
+	margin-bottom:0.5em;
+	padding:0 1em;
+	padding-bottom:3.5em;
+	position:relative;
+	width:20%;
+}
+.search-box.success{
+	background:#D2FDD0;
+}
+.search-box.warning{
+	background:#FEEECF;
+}
+.search-box.danger{
+	background:#FFCECE;
+}
+.search-box.problem{
+	background:#E6D6F8;
+}
+.search-box.disabled{
+	background:#F0F0F0;
+	color:#BBBBBB;
+}
+.div-list .title{
+	margin-left:-0.8em;
+}
+.div-list{
+	padding-left:0.8em;
+}
+.btn-box{
+	bottom:0;
+	left:0;
+	position:absolute;
+	width:100%;
+}
+.flex-content{
+	display: flex;
+	flex-wrap: wrap;
+}
+.state{
+	position:absolute;
+	right:5px;
+	top:5px;
+}
+.data-block{
+	margin-bottom: 8em;
+}

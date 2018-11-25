@@ -1,0 +1,28 @@
+{
+	"app": {
+		"url":"http://localhost/app/",
+		"path":"/opt/lampp/htdocs/app/",
+		"path_prefix":"/app",
+		"path_tmp": "tmp/",
+		"error_reporting":"22527",
+		"display_errors":0,
+		"stage":"***"
+	},
+	"mail": {
+		"mail_admin": {
+			"user": "****@screenrol.es",
+			"pass": "****",
+			"host": "mail.screenrol.com",
+			"port": 25
+		}
+	},
+	"databases": {
+		"screenrol": {
+			"host":"localhost",
+			"user":"user",
+			"pass":"",
+			"name":"screenrol",
+			"new_link":true
+		}
+	}
+}

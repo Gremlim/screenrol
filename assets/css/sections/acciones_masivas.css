@@ -1,0 +1,110 @@
+#broadcast_results,
+#broadcast_errors {
+	margin-top: 1em;
+	height: 100px;
+	overflow-y: scroll;
+	background: #ccc;
+}
+
+#broadcast_errors {
+	color: #600;
+}
+
+tr.fail td {
+	background-color: #f27171 !important;
+}
+
+.form-container {
+	padding-top: 1em;
+	padding-bottom: 2em;
+}
+
+.form-container .form-input {
+
+	margin-top: 1em;
+}
+
+.progress-info {
+	margin-top: 2em;
+	border-top: 1px dotted #ccc;
+	padding-top: 1em;
+}
+
+.progress-info #progress-bar {
+	min-height: 1em;
+	background-color: #666;
+	border-radius: 3px;
+	/*overflow: none;*/
+	margin-bottom: 1em;
+}
+
+.progress-info #progress-bar #progress-bar-grow {
+
+	min-height: 1em;
+	background-color: #15C10F;
+	width: 0%;
+	transition: all 0.3s ease;
+}
+
+#busqueda {width:90%;}
+#buscar {font-size:10px;}
+
+.range-input {
+	border:0;
+	color:#f6931f;
+	font-weight:bold;
+	width:75px;
+}
+
+.range-separator {
+	border:0;
+	color:#f6931f;
+	font-weight:bold;
+}
+
+#txtPersonAll {width:80%;}
+
+.command_control {font-size:10px;}
+.orange-warning {
+	color:orange;
+	font-weight:bold;
+	text-align:center
+}
+
+.examples {
+	border:1px dotted gray;
+	padding:5px;
+}
+
+.examples dt {margin: .5em 0em; padding-left: 1em;}
+.examples dd {padding-left: 1.2em;}
+/*.examples .example_heading {color:#27278F;}*/
+
+.click {cursor:pointer;}
+
+.botActualiza {
+	cursor:pointer;
+	width:32px;
+}
+
+.btn-command {
+	cursor:pointer;
+	width:34px;
+}
+
+.btn-reply {
+	cursor:pointer;
+	width:32px;
+}
+
+.ip-lists {
+	padding-right:30px;
+}
+
+.server-warning {
+	color:orange;
+}
+
+.server-ok {}
+
+.example_input {display: block; font-size: 0.8em; border: 1px solid #ccc; padding: 0.1em 0.3em;}

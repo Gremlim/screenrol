@@ -1,0 +1,27 @@
+.popover {max-width: 550px !important; width: 550px;}
+.popover th {text-align: center;}
+.popover td {padding: 0em 1em;}
+
+tr.client_td {}
+tr.situation_2 td {color: #F9AC39;}
+tr.situation_3 td {color: #F9393F;}
+tr.situation_default td {color: #793C88;}
+tr.situation_deleted td {color: #F9393F;}
+
+tr.client_td ul {list-style-type: disc; transition: all 0.3s;}
+tr.client_td ul li {display:none;}
+tr.client_td ul li:nth-child(1),
+tr.client_td ul:hover li {display: list-item;}
+
+tr.client_td ul li.more {display:list-item;}
+tr.client_td ul:hover li.more {display: none;}
+
+#loading {
+	text-align: center;
+	font-size: 16px;
+	margin: 3em auto;
+}
+
+#contact-table {
+	width: 100%;
+}

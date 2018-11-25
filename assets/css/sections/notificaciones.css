@@ -1,0 +1,5 @@
+.contact-table {width: 100%;}
+.contact-table th {text-align: center; cursor: pointer;}
+.contact-table td {text-align: center;}
+.contact-table td .with-check {}
+.ui-front {z-index: 66666666666 !important; /*Fuck you*/}

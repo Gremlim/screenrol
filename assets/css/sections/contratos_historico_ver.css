@@ -1,0 +1,16 @@
+.change{
+	color:red;
+}
+.new_anexo{
+	border: 1px dashed red;
+}
+.acceso{
+	background: #E4E4E4;
+}
+.acceso.new_acceso{
+	background: #FACFFA;
+}
+.anexo{
+	border:1px dashed gray !important;
+	padding: 20px;
+}

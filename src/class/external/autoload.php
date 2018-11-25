@@ -1,0 +1,15 @@
+<?php
+
+//This hook should catch classes here.
+spl_autoload_register(function($_class) {
+    	$path=__DIR__.DIRECTORY_SEPARATOR.str_replace("\\", DIRECTORY_SEPARATOR, $_class).'.php';
+
+    	if(file_exists($path) && is_file($path)) {
+    		require($path);
+    	}
+});
+
+require_once(\app\tools::build_path("src/class/external/DonDominioAPI/DonDominioAPI.php"));
+require_once(\app\tools::build_path("src/class/external/ExcelWriter/excelwriter.php"));
+require_once(\app\tools::build_path("src/class/external/PHPMailer/class.phpmailer2.php"));
+require_once(\app\tools::build_path("src/class/external/PHPMailer/class.smtp.php"));

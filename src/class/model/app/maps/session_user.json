@@ -1,0 +1,12 @@
+{
+    "tablename":"session_user",
+    "primary":"id",
+    "fields":[
+        {"name":"id","field":"id","type":"int","default":null},
+        {"name":"phpsessid","field":"phpsessid","type":"string","default":null},
+        {"name":"usuario","field":"iduser","type":"model::dash::usuario","default":null,"reference":"cod"},
+        {"name":"fecha","field":"fecha","type":"string","default":null},
+        {"name":"persist","field":"persist","type":"boolean","default":false},
+        {"name":"last_activity","field":"last_activity","type":"string","default":false}
+    ]
+}

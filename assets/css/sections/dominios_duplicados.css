@@ -1,0 +1,30 @@
+#busqueda {
+	width:90%;
+}
+
+#buscar {
+	font-size:10px;
+}
+
+.legend span {display: inline-block; width: 2em; height: 1em;}
+.no-reply {background:#EB3434; color: #EB3434;}
+.internal-ip {background:#1B82B4; color: #1B82B4;}
+.external-ip {background:#EEA331; color: #EEA331;}
+.same-ip {background:green; color: green;}
+
+
+tr.serverrow {
+	border-bottom:1px solid #C9C9C9;
+	border-top:1px solid #C9C9C9;
+}
+
+tr.serverrow td {
+	padding:5px 10px;
+	white-space:nowrap;
+}
+
+ul.ip_list {width: 100%;}
+ul.ip_list li {display: inline; float: left; padding: 0em 1em; list-style-type: none; font-size: 0.9em; width: 100px;}
+
+.match {color: green; font-weight: bold;}
+.domain_ip {font-weight:bold; background-color: #fff !important;}

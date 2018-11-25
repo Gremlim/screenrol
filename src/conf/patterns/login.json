@@ -1,0 +1,44 @@
+[
+	{"name" : "controller::other::login", 					"pattern" : "/login.php",
+		"metadata": {"method":"show_login","params":[
+			{"name":"err", "source":"query","optional":true,"default":null},
+			{"name":"username", "source":"query","optional":true,"default":null}
+		]}
+	},
+	{"name" : "controller::other::login", 					"pattern" : "/logout",
+		"metadata": {"method":"do_logout","params":[]}
+	},
+	{"name" : "controller::other::login", 					"pattern" : "/do_login",
+		"metadata": {"method":"do_login","params":[
+			{"name":"user", "source":"body"},
+			{"name":"pass", "source":"body"},
+			{"name":"remember", "source":"body", "optional":true, "default": false}
+		]}
+	},{"name" : "controller::other::login", 					"pattern" : "/recuperar_pass.php",
+		"metadata": {"method":"show_recover_pass","params":[
+			{"name":"sent", "source":"query", "optional":true, "default": false},
+			{"name":"msg", "source":"query", "optional":true, "default": null}
+		]}
+	},
+	{"name" : "controller::other::login", 					"pattern" : "/login/perform_pass_recovery",
+		"metadata": {"method":"perform_pass_recovery","params":[
+			{"name":"email", "source":"body"}
+		]}
+	},
+	{"name" : "controller::other::login", 					"pattern" : "/login/perform_pass_change",
+		"metadata": {"method":"perform_pass_change","params":[
+			{"name":"email", "source":"body"},
+			{"name":"seed", "source":"body"},
+			{"name":"pass", "source":"body"},
+			{"name":"check_pass", "source":"body"}
+		]}
+	},
+	{"name" : "controller::other::login", 					"pattern" : "/reset_pass.php",
+		"metadata": {"method":"show_reset_pass","params":[
+			{"name":"email", "source":"query"},
+			{"name":"seed", "source":"query"},
+			{"name":"msg", "source":"query", "optional":true, "default":null},
+			{"name":"sent", "source":"query", "optional":true, "default":null}
+		]}
+	}
+]

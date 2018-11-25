@@ -1,0 +1,35 @@
+table.call-history {
+	font-size:12px;
+	width:100%;
+}
+
+table.call-history td,
+table.call-history th {
+	padding: 0.3em !important;
+}
+
+form#datosUsuario table {
+
+	margin: auto;
+	border-spacing: 10px;
+}
+
+form#datosUsuario table td {
+	padding: 10px;
+}
+
+select#client_id {
+	width:450px;
+}
+
+input#name {
+	width:100%;
+}
+
+input#aceptar {
+	margin-right: 3em;
+}
+
+p#errores {
+	color:red;
+}

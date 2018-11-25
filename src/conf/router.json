@@ -1,0 +1,16 @@
+{
+	"files":[
+		{"file":"/src/conf/patterns/login.json"}
+	],
+	"patterns":[
+		{"name" : "controller::section::index", 					"pattern" : "/index.php",
+			"metadata": {"method":"execute","params":[]}
+		},
+		{"name" : "controller::section::index",						"pattern" : "/",
+			"metadata": {"method":"execute","params":[]}
+		},
+		{"name" : "controller::other::forbidden",					"pattern" : "/forbidden",
+			"metadata": {"method":"execute","params":[]}
+		}		
+	]
+}
