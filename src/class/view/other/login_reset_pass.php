@@ -16,6 +16,7 @@ class login_reset_pass extends \view\section {
 		$this->username_sent=$_username_sent;
 	}
 
+
 	public function					get_css_array() {
 
 		return array_map(function($_item) {
@@ -99,14 +100,14 @@ R;
 							</div>
 						</div>
 						<div class="alert alert-danger col-lg-12 {$display_error}">{$show_error}</div>
-
+						
 						<div class="form-group">
 							<div class="col-lg-12">
 							<a class="btn btn-default" id="botonBorrar" href="recovery">Cancelar</a>
 								<input type="submit" name="enviar" value="Restablecer" class="btn btn-primary" id="botonEntrar"/>
 							</div>
 						</div>
-
+						
 						<input type="hidden" name="seed" id="seed" value="{$this->seed}" />
 						<input type="hidden" name="email" id="email" value="{$this->email}" />
 					</form>

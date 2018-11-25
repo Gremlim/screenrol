@@ -141,7 +141,7 @@ R;
 		$load=array(
 			"assets/js/jquery/jquery-3.3.1.min.js",
 			"assets/js/bootstrap/bootstrap.min.js",
-			"assets/js/fontawesome/all.min.js",
+			// "assets/js/fontawesome/all.min.js",
 			"assets/js/app/fetch.js",
 			"assets/js/app/modal.js",
 			"assets/js/app/common.js"
