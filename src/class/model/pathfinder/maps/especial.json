@@ -1,9 +1,0 @@
-{
-    "tablename":"gr_especiales",
-    "primary":"id",
-    "fields":[
-        {"name":"id","field":"id","type":"int","default":null},
-        {"name":"nombre","field":"nombre","type":"string","default":null},
-        {"name":"img","field":"img","type":"string","default":false}
-    ]
-}

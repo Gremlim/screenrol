@@ -4,7 +4,7 @@ namespace model\pathfinder;
 class personaje extends \orm\model{
 	
 	private $id;
-	private $idjugador;
+	private $jugador;
 	private $nombre;
 	private $raza;
 	private $clase;
@@ -13,8 +13,12 @@ class personaje extends \orm\model{
 	private $img;
 	private $xpactual;
 
+	public function __construct(){
+		$this->register_prototype('jugador',$this->jugador);
+	}
+
 	public function get_id(){return $this->id;}
-	public function get_idjugador(){return $this->idjugador;}
+	public function get_jugador(){return $this->jugador->get();}
 	public function get_nombre(){return $this->nombre;}
 	public function get_raza(){return $this->raza;}
 	public function get_clase(){return $this->clase;}
@@ -24,7 +28,7 @@ class personaje extends \orm\model{
 	public function get_xpactual(){return $this->xpactual;}
 
 	public function set_id($_val){$this->id=$_val; return $this;}
-	public function set_idjugador($_val){$this->idjugador=$_val; return $this;}
+	public function set_jugador($_val){$this->jugador->set($_val); return $this;}
 	public function set_nombre($_val){$this->nombre=$_val; return $this;}
 	public function set_raza($_val){$this->raza=$_val; return $this;}
 	public function set_clase($_val){$this->clase=$_val; return $this;}

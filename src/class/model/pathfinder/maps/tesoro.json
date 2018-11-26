@@ -1,9 +1,9 @@
 {
-    "tablename":"gr_tesoro",
+    "tablename": "pf_tesoro",
     "primary":"id",
     "fields":[
         {"name":"id","field":"id","type":"int","default":null},
-        {"name":"idepisodio","field":"idepisodio","type":"int","default":null},
+        {"name":"episodio","field":"idepisodio","type":"model::pathfinder::episodio","default":null,"reference":"id"},
         {"name":"tesoro","field":"tesoro","type":"string","default":null},
         {"name":"ppt","field":"ppt","type":"int","default":null},
         {"name":"po","field":"po","type":"int","default":false},
@@ -12,6 +12,7 @@
         {"name":"libro","field":"libro","type":"string","default":false},
         {"name":"pagina","field":"pagina","type":"int","default":false},
         {"name":"cantidad","field":"cantidad","type":"int","default":false},
-        {"name":"idinstancia","field":"idinstancia","type":"int","default":false}
+        {"name":"sesion","field":"idsesion","type":"model::pathfinder::sesion","default":false,"reference":"id"},
+        {"name":"estado","field":"estado","type":"int","default":false}
     ]
 }

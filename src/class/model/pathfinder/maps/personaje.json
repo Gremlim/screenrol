@@ -1,9 +1,9 @@
 {
-    "tablename":"gr_pj",
+    "tablename": "pf_pj",
     "primary":"id",
     "fields":[
         {"name":"id","field":"id","type":"int","default":null},
-        {"name":"idjugador","field":"idjugador","type":"int","default":null},
+        {"name":"jugador","field":"idjugador","type":"model::pathfinder::jugador","default":null,"reference":"id"},
         {"name":"nombre","field":"nombre","type":"string","default":null},
         {"name":"raza","field":"raza","type":"string","default":null},
         {"name":"clase","field":"clase","type":"string","default":false},

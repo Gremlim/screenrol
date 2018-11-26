@@ -1,9 +1,9 @@
 {
-    "tablename":"gr_sesion",
+    "tablename": "pf_sesion",
     "primary":"id",
     "fields":[
         {"name":"id","field":"id","type":"int","default":null},
-        {"name":"idinstancia","field":"idinstancia","type":"int","default":null},
+        {"name":"aventura","field":"idaventura","type":"model::pathfinder::aventura","default":null,"reference":"id"},
         {"name":"porcen_no_jug","field":"porcen_no_jug","type":"int","default":null},
         {"name":"nombre","field":"nombre","type":"string","default":false},
         {"name":"fecha","field":"fecha","type":"int","default":false}

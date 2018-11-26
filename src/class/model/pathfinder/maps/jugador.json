@@ -1,10 +1,10 @@
 {
-    "tablename":"gr_jugador",
+    "tablename": "pf_jugador",
     "primary":"id",
     "fields":[
         {"name":"id","field":"id","type":"int","default":null},
-        {"name":"idinstancia","field":"idinstancia","type":"string","default":null},
+        {"name":"usuario","field":"idusuario","type":"model::app::usuario","default":null,"reference":"id"},
         {"name":"estado","field":"estado","type":"int","default":false},
-        {"name":"nombre","field":"nombre","type":"string","default":false}
+        {"name":"aventura","field":"idaventura","type":"model::pathfinder::aventura","default":false,"reference":"id"}
     ]
 }

@@ -1,10 +1,10 @@
 {
-    "tablename":"gr_pj_sesion",
+    "tablename": "pf_pj_sesion",
     "primary":"id",
     "fields":[
         {"name":"id","field":"id","type":"int","default":null},
-        {"name":"idpj","field":"idpj","type":"int","default":null},
-        {"name":"idsesion","field":"idsesion","type":"int","default":null},
+        {"name":"pj","field":"idpj","type":"model::pathfinder::personaje","default":null,"reference":"id"},
+        {"name":"sesion","field":"idsesion","type":"model::pathfinder::sesion","default":null,"reference":"id"},
         {"name":"xp","field":"xp","type":"int","default":null},
         {"name":"jugado","field":"jugado","type":"int","default":false}
     ]

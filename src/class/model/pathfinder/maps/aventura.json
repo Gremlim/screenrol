@@ -1,14 +1,17 @@
 {
-    "tablename":"gr_aventura",
+    "tablename": "pf_aventura",
     "primary":"id",
     "fields":[
         {"name":"id","field":"id","type":"int","default":null},
         {"name":"nombre","field":"nombre","type":"string","default":null},
         {"name":"img","field":"img","type":"string","default":null},
-        {"name":"idespecial","field":"idespecial","type":"int","default":null},
-        {"name":"idusuario","field":"idusuario","type":"int","default":false},
+        {"name":"especial","field":"idespecial","type":"model::pathfinder::especial","default":null,"reference":"id"},
+        {"name":"usuario","field":"idusuario","type":"model::app::usuario","default":false,"reference":"id"},
+        {"name":"created_by","field":"idcreatedby","type":"model::app::usuario","default":false,"reference":"id"},
         {"name":"descripcion","field":"descripcion","type":"string","default":false},
         {"name":"publica","field":"publica","type":"int","default":false},
-        {"name":"vel_subida","field":"vel_subida","type":"int","default":false}
+        {"name":"vel_subida","field":"vel_subida","type":"int","default":false},
+        {"name":"fecha","field":"fecha","type":"string","default":false},
+        {"name":"estado","field":"estado","type":"int","default":false}
     ]
 }

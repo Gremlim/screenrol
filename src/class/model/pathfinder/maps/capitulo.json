@@ -1,9 +1,9 @@
 {
-    "tablename":"gr_capitulo",
+    "tablename": "pf_capitulo",
     "primary":"id",
     "fields":[
         {"name":"id","field":"id","type":"int","default":null},
-        {"name":"idaventura","field":"idaventura","type":"int","default":null},
+        {"name":"aventura","field":"idaventura","type":"model::pathfinder::aventura","default":null,"reference":"id"},
         {"name":"nombre","field":"nombre","type":"string","default":null},
         {"name":"num","field":"num","type":"int","default":false}
     ]
