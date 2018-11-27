@@ -106,10 +106,11 @@ class entity_manager{
 		//IDEA: Save and reuse this statment. As in "update".
 		$stmt=$this->dbconn->conn->prepare($query);
 		foreach($arr_fields as $field){
-			if(is_bool($arr_values[$field->field])){
-				$stmt->bindParam(":".$field->field,$arr_values[$field->field],\PDO::PARAM_BOOL);
+
+			if(is_bool($arr_values[$field])){
+				$stmt->bindParam(":".$field,$arr_values[$field],\PDO::PARAM_BOOL);
 			}else{
-				$stmt->bindParam(":".$field->field,$arr_values[$field->field]);
+				$stmt->bindParam(":".$field,$arr_values[$field]);
 			}
 		}
 		$stmt->execute();

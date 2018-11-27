@@ -145,6 +145,7 @@ class login extends \controller\unauthenticated_controller {
 				->set_fecha(date('Y-m-d H:i:s'))
 				->set_last_activity(date('Y-m-d H:i:s'))
 				->set_persist($persist);
+				
 			$em->create($sess);
 		}
 
